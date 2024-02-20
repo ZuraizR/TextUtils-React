@@ -97,7 +97,7 @@ const TextForm = (props) => {
       <div className='container my-4'>
         <h1>Your Text Summary</h1>
         <p>
-          {text.split(' ').filter((el) => el.length !== 0).length} words and{' '}
+          {text.split(/\s+/).filter((el) => el.length !== 0).length} words and{' '}
           {text.length} characters
         </p>
         <p>
